@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+.hero{
+  font-family: 'Sofia Pro';
+  background-image: url("./hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 1080px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+
+  .hero-text{
+    padding: 413px 0 40px;
+    margin: 0;
+    font-size: 115px;
+    line-height: 130px;
+    font-weight: 500;
+    font-family: Alata;
+  }
+
+  .hero-support-text{
+    font-size: 25px;
+    width: 1200px;
+    font-weight: 300;
+    text-align: center;
+    font-style: normal;
+    line-height: 35px;
+  }
+
+  .button{
+    width: 196px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    text-decoration: none;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    line-height: normal;
+
+    .plug{
+      width: 20px;
+      height: 10px;
+      margin-top: 2.5px;
+      margin-left: 3px;
+    }
+  }
+
+  .line{
+    margin: 104px 0 22px;
+    width: 1px;
+    height: 101px;
+  }
+
+  .hero-more-text{
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+

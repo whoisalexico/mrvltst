@@ -1,0 +1,44 @@
+{{ "hero.scss" | asset_url | stylesheet_tag }}
+
+<section class="hero">
+	<h1 class="hero-text">{{ section.settings.hero_text }}</h1>
+	<p class="hero-support-text">{{ section.settings.hero_support_text }}</p>
+	<a class="button yellow"  href="#">
+		{{ section.settings.hero_button_text }}
+		<img class="plug" src="{{ "plug.svg" | asset_url }}" alt="">
+	</a>
+	<div class="line yellow"></div>
+	<p class="hero-more-text">{{ section.settings.hero_more_text }}</p>
+</section>
+
+{% schema %}
+{
+	"name": "Hero",
+	"settings": [
+		{
+			"id": "hero_text",
+			"type": "text",
+			"label": "Main Hero Text",
+			"default": "Marvel Power Group"
+		},
+		{
+			"id": "hero_support_text",
+			"type": "text",
+			"label": "Support Hero Text",
+			"default": "Marvel Power Group is a woman-owned, ESG-focused transaction broker and commercial advisor. We offer services to clients in power, gas, water, industrial and transportation sectors."
+		},
+		{
+			"id": "hero_button_text",
+			"type": "text",
+			"label": "Button Hero Text",
+			"default": "CONTACT US"
+		},
+		{
+			"id": "hero_more_text",
+			"type": "text",
+			"label": "More Hero Text",
+			"default": "Scroll for more"
+		}
+	]
+}
+{% endschema %}
