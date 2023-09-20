@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 .hero{
-  font-family: 'Sofia Pro';
   background-image: url("./hero.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -10,6 +9,7 @@
   flex-direction: column;
   align-items: center;
   color: #fff;
+  padding: 0;
 
   .hero-text{
     padding: 413px 0 40px;

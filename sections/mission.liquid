@@ -1,1 +1,40 @@
-<h1>SUS</h1>
+{{ "mission.scss" | asset_url | stylesheet_tag }}
+
+<section class="mission">
+	<h2 class="section-title">{{ section.settings.section_title }}</h2>
+	<div class="bar yellow"></div>
+
+
+</section>
+
+{% schema %}
+{
+	"name": "Mission",
+	"settings": [
+		{
+			"id": "section_title",
+			"type": "text",
+			"label": "Section Title",
+			"default": "Mission"
+		},
+		{
+			"id": "hero_support_text",
+			"type": "text",
+			"label": "Support Hero Text",
+			"default": "Marvel Power Group is a woman-owned, ESG-focused transaction broker and commercial advisor. We offer services to clients in power, gas, water, industrial and transportation sectors."
+		},
+		{
+			"id": "hero_button_text",
+			"type": "text",
+			"label": "Button Hero Text",
+			"default": "CONTACT US"
+		},
+		{
+			"id": "hero_more_text",
+			"type": "text",
+			"label": "More Hero Text",
+			"default": "Scroll for more"
+		}
+	]
+}
+{% endschema %}
