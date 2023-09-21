@@ -1,0 +1,36 @@
+.mission-wrapper{
+  display: flex;
+  font-size: 18px;
+
+  .mission-text{
+    width: 570px;
+    margin: 0 0 0 54px;
+  }
+}
+
+.mission-items{
+  display: flex;
+  margin-top: 96px;
+
+  .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+    .item-number{
+      margin: 16px 0 8px;
+      font-size: 48px;
+      font-weight: bold;
+      line-height: 56px;
+    }
+    .item-text{
+      text-align: center;
+      font-size: 14px;
+      line-height: 18px;
+      width: 200px;
+    }
+    &:first-child{
+      margin-left: 0;
+    }
+  }
+}

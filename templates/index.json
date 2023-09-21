@@ -2,19 +2,20 @@
   "sections": {
     "hero": {
       "type": "hero",
-      "settings": {
-        "padding": 26
-      }
+      "settings": {}
     },
     "mission": {
        "type": "mission",
-       "settings": {
-        "padding": 0
-       }
+       "settings": {}
+    },
+    "services":{
+      "type": "services",
+      "settings": {}
     }
   },
   "order": [
     "hero",
-    "mission"
+    "mission",
+    "services"
   ]
 }

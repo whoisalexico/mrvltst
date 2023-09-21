@@ -1,0 +1,56 @@
+.services-main-text {
+  font-size: 18px;
+  line-height: 26px;
+  width: 920px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.services-support-text {
+  width: 825px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 0;
+}
+
+.services-items {
+  margin: 56px 0;
+  display: flex;
+
+  .item{
+    margin-right: 30px;
+
+    .title{
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 48px;
+      width: 350px;
+    }
+
+    .list{
+      list-style: square;
+      margin:0 0 0 -22px;
+
+      .item-list{
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 15px;
+
+        &::marker{
+          font-size: 14px;
+          color: #ffffff;
+        }
+
+        &:last-child{
+          margin-bottom: 32px;
+        }
+      }
+    }
+
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}
