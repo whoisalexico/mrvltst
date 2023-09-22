@@ -12,15 +12,15 @@
     "mission": {
       "type": "mission",
       "blocks": {
-        "178512e4-c859-47c1-8d3c-5a664775f01f": {
+        "41c79e35-7e6b-4907-95a7-e794bc976047": {
           "type": "item",
           "settings": {
-            "item_text": "in closed RNG transactions in 2021 alone",
+            "item_text": "in closed RNG transactions im 2021 alone",
             "item_image": "shopify:\/\/shop_images\/mission-item-1_17e087c1-1748-4f8a-b808-36e8183d1bb8.svg",
             "item_num": "$1B"
           }
         },
-        "16f032d5-d5b8-4e5d-9ce7-52b651ac0bbe": {
+        "632a7d97-8144-43cb-ace5-23ff8db7c050": {
           "type": "item",
           "settings": {
             "item_text": "in cumulative Renewable Energy and RNG closings",
@@ -28,15 +28,15 @@
             "item_num": "$4B"
           }
         },
-        "3d459ca1-e294-41ce-b5a1-e0309cc40b64": {
+        "7fd2ca31-f592-4666-b1d0-adaa403664be": {
           "type": "item",
           "settings": {
-            "item_text": "of collective industry experience",
+            "item_text": "of collectibe industry experience",
             "item_image": "shopify:\/\/shop_images\/mission-item-3_c8c4d9df-b4e9-43ed-a971-f871d129b92b.svg",
             "item_num": "30 Yrs"
           }
         },
-        "5d66701b-be29-4e66-9a96-a5220645aba7": {
+        "84f56772-0268-41a3-bf42-607f92618580": {
           "type": "item",
           "settings": {
             "item_text": "in capital placed for client ventures",
@@ -44,21 +44,21 @@
             "item_num": "$300M"
           }
         },
-        "4b1af441-076c-4fb5-bcc6-ddb9c3522759": {
+        "c8258922-ad91-4e22-b161-771cb4d2c875": {
           "type": "item",
           "settings": {
-            "item_text": "independent and unbiased advice",
+            "item_text": "independent and unbaised advice",
             "item_image": "shopify:\/\/shop_images\/mission-item-5_c0227980-64bf-4a4c-a5e7-37b25c70894a.svg",
             "item_num": "100%"
           }
         }
       },
       "block_order": [
-        "178512e4-c859-47c1-8d3c-5a664775f01f",
-        "16f032d5-d5b8-4e5d-9ce7-52b651ac0bbe",
-        "3d459ca1-e294-41ce-b5a1-e0309cc40b64",
-        "5d66701b-be29-4e66-9a96-a5220645aba7",
-        "4b1af441-076c-4fb5-bcc6-ddb9c3522759"
+        "41c79e35-7e6b-4907-95a7-e794bc976047",
+        "632a7d97-8144-43cb-ace5-23ff8db7c050",
+        "7fd2ca31-f592-4666-b1d0-adaa403664be",
+        "84f56772-0268-41a3-bf42-607f92618580",
+        "c8258922-ad91-4e22-b161-771cb4d2c875"
       ],
       "settings": {
         "section_title": "Mission",
@@ -68,55 +68,89 @@
     "services": {
       "type": "services",
       "blocks": {
-        "9fd8d7c0-e972-4994-a42d-cf68c8f6c17d": {
+        "bba2d709-0afa-4ff7-baa7-6f69bff59229": {
           "type": "item",
           "settings": {
             "item_title": "Transaction Support",
-            "item_list_1": "Renewable Natural Gas offtakes",
-            "item_list_2": "RIN, RTC, REC and LCFS brokerage",
-            "item_list_3": "Renewable PPA origination",
-            "item_list_4": "Contract negotiations and structuring",
+            "list": "<ul class=\"list\">\n\t\t\t\t\t\t\t<li class=\"item-list\">Renewable Natural Gas offtakes\n<\/li>\n\t\t\t\t\t\t\t<li class=\"item-list\">RIN, RTC, REC and LCFS brokerage<\/li>\n\t\t\t\t\t\t\t<li class=\"item-list\">Renewable PPA origination<\/li>\n\t\t\t\t\t\t\t<li class=\"item-list\">Contract negotiations and structuring<\/li>\n\t\t\t\t\t\t<\/ul>",
             "arrow": "shopify:\/\/shop_images\/arrow.svg"
           }
         },
-        "3f4f8d28-79a0-4cce-8d7e-d37797d7af40": {
+        "2c8d7673-8721-4c6c-91a2-27b5b37e619b": {
           "type": "item",
           "settings": {
             "item_title": "Enterprise Strategy",
-            "item_list_1": "Market advisory",
-            "item_list_2": "Risk management",
-            "item_list_3": "Capital sourcing or deployment",
-            "item_list_4": "Resource optimization",
+            "list": "<ul class=\"list\">\n\t\t\t\t\t\t\t<li class=\"item-list\">Market advisory<\/li>\n\t\t\t\t\t\t\t<li class=\"item-list\">Risk management<\/li>\n\t\t\t\t\t\t\t<li class=\"item-list\">Capital sourcing or deployment<\/li>\n\t\t\t\t\t\t\t<li class=\"item-list\">Resource optimization<\/li>\n\t\t\t\t\t\t<\/ul>",
             "arrow": "shopify:\/\/shop_images\/arrow.svg"
           }
         },
-        "6a670d4a-738a-4d11-b7ed-7cad7c44d97b": {
+        "bd13058d-e016-4771-8208-7bcfe4a04575": {
           "type": "item",
           "settings": {
             "item_title": "Market Development",
-            "item_list_1": "New venture strategy",
-            "item_list_2": "Go-to-market architecture",
-            "item_list_3": "M&A support",
-            "item_list_4": "Marketing and partnerships",
+            "list": "<ul class=\"list\">\n\t\t\t\t\t\t\t<li class=\"item-list\">New venture strategy<\/li>\n\t\t\t\t\t\t\t<li class=\"item-list\">Go-to-market architecture<\/li>\n\t\t\t\t\t\t\t<li class=\"item-list\">M&amp;A support<\/li>\n\t\t\t\t\t\t\t<li class=\"item-list\">Marketing and partnerships<\/li>\n\t\t\t\t\t\t<\/ul>",
             "arrow": "shopify:\/\/shop_images\/arrow.svg"
           }
         }
       },
       "block_order": [
-        "9fd8d7c0-e972-4994-a42d-cf68c8f6c17d",
-        "3f4f8d28-79a0-4cce-8d7e-d37797d7af40",
-        "6a670d4a-738a-4d11-b7ed-7cad7c44d97b"
+        "bba2d709-0afa-4ff7-baa7-6f69bff59229",
+        "2c8d7673-8721-4c6c-91a2-27b5b37e619b",
+        "bd13058d-e016-4771-8208-7bcfe4a04575"
       ],
       "settings": {
         "section_title": "Services",
         "services_rich_text_main": "",
         "services_rich_text_support": ""
       }
+    },
+    "team": {
+      "type": "team",
+      "blocks": {
+        "f154552a-e8db-4f6e-a959-50203e1e9b11": {
+          "type": "item",
+          "settings": {
+            "meet": "Meet Katherine",
+            "arrow": "shopify:\/\/shop_images\/yellow_arrow.svg",
+            "name": "Katherine Ryzhaya",
+            "photo": "shopify:\/\/shop_images\/katherine.png",
+            "post": "Founder and CEO",
+            "story": "A serial entrepreneur and industry expert, Katherine has nearly 20 years of experience in running infrastructure businesses and closing complex energy transactions. As the sole founder of Marvel, in 2019, Katherine saw an opportunity to run a business <i>her<\/i> way — leading with high integrity, unmatched focus on service quality and utmost commitment to driving customers’ yields.",
+            "career_history": "<ul class=\"list\">\n\t\t\t\t\t\t\t<li class=\"item-list\">CEO, Renovar, <b>Shell Digital Ventures<\/b>\n<\/li>\n\t\t\t\t\t\t\t<li class=\"item-list\">CCO, <b>Lightsource bp<\/b>\n<\/li>\n\t\t\t\t\t\t\t<li class=\"item-list\">Co-Founder and CCO, <b>AMS<\/b> (acquired by Fluence, NASDAQ: FLNC)<\/li>\n\t\t\t\t\t\t\t<li class=\"item-list\">VP and Director, <b>Evolution Markets<\/b>\n<\/li>\n\n<li class=\"item-list\">Principal, <b>Pacific Gas and Electric Company<\/b>\n<\/li>\n\t\t\t\t\t\t<\/ul>",
+            "education": "<ul class=\"list\">\n\t\t\t\t\t\t\t<li class=\"item-list\">BS, Finance, University of San Francisco<\/li>\n\t\t\t\t\t\t\t<li class=\"item-list\">MBA, Finance, Duke University<\/li>\n\t\t\t\t\t\t<\/ul>",
+            "socials_1": "shopify:\/\/shop_images\/linkedin.svg",
+            "socials_2": "shopify:\/\/shop_images\/email.svg"
+          }
+        },
+        "04c656f0-bce4-42ce-bf57-5f3f3a8af7a5": {
+          "type": "item",
+          "settings": {
+            "meet": "Meet Sam",
+            "arrow": "shopify:\/\/shop_images\/yellow_arrow.svg",
+            "name": "Sam Peelle",
+            "photo": "shopify:\/\/shop_images\/sam.png",
+            "post": "Senior Director and Partner",
+            "story": "Sam has over 10 years of experience in renewable power and gas markets, with expertise in renewable fuels, demand side management, energy procurement, energy storage and analytics. Throughout his career, Sam has worked on all sides of the transaction, in each case leading with integrity, customer service and a keen focus on delivering results that positively impact the client’s bottom line and environmental impact.",
+            "career_history": "<ul class=\"list\">\n\t\n<li class=\"item-list\">Director, <b>AMS<\/b> (acquired by Fluence, NASDAQ: FLNC)<\/li>\n\t\t\t\t\t\t<li class=\"item-list\">Manager, <b>EnerNOC<\/b> (acquired by Enel, BIT: ENEL)<\/li>\n\t\t\t\t\t\t\t<li class=\"item-list\">Regional Manager, <b>United Technologies Corporation<\/b>\n<\/li>\t\t\n\t\t\t\t\t\t\t\t\t\t<\/ul>",
+            "education": "<ul class=\"list\">\n\t\t\t\t\t\t\t<li class=\"item-list\">BA, Political Science, University of Pennsylvania<\/li>\n\t\t\t\t\t\t\t<li class=\"item-list\">MBA, Finance, Babson College<\/li>\n\t\t\t\t\t\t<\/ul>",
+            "socials_1": "shopify:\/\/shop_images\/linkedin.svg",
+            "socials_2": "shopify:\/\/shop_images\/email.svg"
+          }
+        }
+      },
+      "block_order": [
+        "f154552a-e8db-4f6e-a959-50203e1e9b11",
+        "04c656f0-bce4-42ce-bf57-5f3f3a8af7a5"
+      ],
+      "settings": {
+        "section_title": "Team"
+      }
     }
   },
   "order": [
     "hero",
     "mission",
-    "services"
+    "services",
+    "team"
   ]
 }
