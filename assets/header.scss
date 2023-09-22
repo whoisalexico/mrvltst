@@ -7,6 +7,7 @@
     display: flex;
     justify-content: space-between;
     transition: .5s;
+    z-index: 99;
     .logo{
         margin-right: 390px;
     }

@@ -14,12 +14,7 @@
 				{% when 'item' %}
 					<div class="item">
 						<p class="title">{{ block.settings.item_title }}</p>
-						<ul class="list">
-							<li class="item-list">{{ block.settings.item_list_1 }}</li>
-							<li class="item-list">{{ block.settings.item_list_2 }}</li>
-							<li class="item-list">{{ block.settings.item_list_3 }}</li>
-							<li class="item-list">{{ block.settings.item_list_4 }}</li>
-						</ul>
+						{{ block.settings.list }}
 						{{ block.settings.arrow | image_url: width: 43 | image_tag }}
 					</div>
 			{% endcase %}
@@ -65,24 +60,9 @@
 					"label": "Item Title"
 				},
 				{
-					"id": "item_list_1",
-					"type": "text",
-					"label": "Item List Text 1"
-				},
-				{
-					"id": "item_list_2",
-					"type": "text",
-					"label": "Item List Text 2"
-				},
-				{
-					"id": "item_list_3",
-					"type": "text",
-					"label": "Item List Text 3"
-				},
-				{
-					"id": "item_list_4",
-					"type": "text",
-					"label": "Item List Text 4"
+					"id": "list",
+					"type": "html",
+					"label": "Item List"
 				},
 				{
 					"id": "arrow",

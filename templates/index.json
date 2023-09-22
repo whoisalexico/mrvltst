@@ -2,20 +2,155 @@
   "sections": {
     "hero": {
       "type": "hero",
-      "settings": {}
+      "settings": {
+        "hero_text": "Marvel Power Group",
+        "hero_support_text": "Marvel Power Group is a woman-owned, ESG-focused transaction broker and commercial advisor. We offer services to clients in power, gas, water, industrial and transportation sectors.",
+        "hero_button_text": "CONTACT US",
+        "hero_more_text": "Scroll for more"
+      }
     },
     "mission": {
-       "type": "mission",
-       "settings": {}
+      "type": "mission",
+      "blocks": {
+        "41c79e35-7e6b-4907-95a7-e794bc976047": {
+          "type": "item",
+          "settings": {
+            "item_text": "in closed RNG transactions im 2021 alone",
+            "item_image": "shopify:\/\/shop_images\/mission-item-1_17e087c1-1748-4f8a-b808-36e8183d1bb8.svg",
+            "item_num": "$1B"
+          }
+        },
+        "632a7d97-8144-43cb-ace5-23ff8db7c050": {
+          "type": "item",
+          "settings": {
+            "item_text": "in cumulative Renewable Energy and RNG closings",
+            "item_image": "shopify:\/\/shop_images\/mission-item-2_e6dbdf02-c4dd-4b09-a123-2d66175ae739.svg",
+            "item_num": "$4B"
+          }
+        },
+        "7fd2ca31-f592-4666-b1d0-adaa403664be": {
+          "type": "item",
+          "settings": {
+            "item_text": "of collectibe industry experience",
+            "item_image": "shopify:\/\/shop_images\/mission-item-3_c8c4d9df-b4e9-43ed-a971-f871d129b92b.svg",
+            "item_num": "30 Yrs"
+          }
+        },
+        "84f56772-0268-41a3-bf42-607f92618580": {
+          "type": "item",
+          "settings": {
+            "item_text": "in capital placed for client ventures",
+            "item_image": "shopify:\/\/shop_images\/mission-item-4_a5696011-5eff-481d-b28f-d98cd9dc5226.svg",
+            "item_num": "$300M"
+          }
+        },
+        "c8258922-ad91-4e22-b161-771cb4d2c875": {
+          "type": "item",
+          "settings": {
+            "item_text": "independent and unbaised advice",
+            "item_image": "shopify:\/\/shop_images\/mission-item-5_c0227980-64bf-4a4c-a5e7-37b25c70894a.svg",
+            "item_num": "100%"
+          }
+        }
+      },
+      "block_order": [
+        "41c79e35-7e6b-4907-95a7-e794bc976047",
+        "632a7d97-8144-43cb-ace5-23ff8db7c050",
+        "7fd2ca31-f592-4666-b1d0-adaa403664be",
+        "84f56772-0268-41a3-bf42-607f92618580",
+        "c8258922-ad91-4e22-b161-771cb4d2c875"
+      ],
+      "settings": {
+        "section_title": "Mission",
+        "mission_rich_text": ""
+      }
     },
-    "services":{
+    "services": {
       "type": "services",
-      "settings": {}
+      "blocks": {
+        "bba2d709-0afa-4ff7-baa7-6f69bff59229": {
+          "type": "item",
+          "settings": {
+            "item_title": "Transaction Support",
+            "list": "<ul class=\"list\">\n\t\t\t\t\t\t\t<li class=\"item-list\">Renewable Natural Gas offtakes\n<\/li>\n\t\t\t\t\t\t\t<li class=\"item-list\">RIN, RTC, REC and LCFS brokerage<\/li>\n\t\t\t\t\t\t\t<li class=\"item-list\">Renewable PPA origination<\/li>\n\t\t\t\t\t\t\t<li class=\"item-list\">Contract negotiations and structuring<\/li>\n\t\t\t\t\t\t<\/ul>",
+            "arrow": "shopify:\/\/shop_images\/arrow.svg"
+          }
+        },
+        "2c8d7673-8721-4c6c-91a2-27b5b37e619b": {
+          "type": "item",
+          "settings": {
+            "item_title": "Enterprise Strategy",
+            "list": "<ul class=\"list\">\n\t\t\t\t\t\t\t<li class=\"item-list\">Market advisory<\/li>\n\t\t\t\t\t\t\t<li class=\"item-list\">Risk management<\/li>\n\t\t\t\t\t\t\t<li class=\"item-list\">Capital sourcing or deployment<\/li>\n\t\t\t\t\t\t\t<li class=\"item-list\">Resource optimization<\/li>\n\t\t\t\t\t\t<\/ul>",
+            "arrow": "shopify:\/\/shop_images\/arrow.svg"
+          }
+        },
+        "bd13058d-e016-4771-8208-7bcfe4a04575": {
+          "type": "item",
+          "settings": {
+            "item_title": "Market Development",
+            "list": "<ul class=\"list\">\n\t\t\t\t\t\t\t<li class=\"item-list\">New venture strategy<\/li>\n\t\t\t\t\t\t\t<li class=\"item-list\">Go-to-market architecture<\/li>\n\t\t\t\t\t\t\t<li class=\"item-list\">M&amp;A support<\/li>\n\t\t\t\t\t\t\t<li class=\"item-list\">Marketing and partnerships<\/li>\n\t\t\t\t\t\t<\/ul>",
+            "arrow": "shopify:\/\/shop_images\/arrow.svg"
+          }
+        }
+      },
+      "block_order": [
+        "bba2d709-0afa-4ff7-baa7-6f69bff59229",
+        "2c8d7673-8721-4c6c-91a2-27b5b37e619b",
+        "bd13058d-e016-4771-8208-7bcfe4a04575"
+      ],
+      "settings": {
+        "section_title": "Services",
+        "services_rich_text_main": "",
+        "services_rich_text_support": ""
+      }
+    },
+    "team": {
+      "type": "team",
+      "blocks": {
+        "f154552a-e8db-4f6e-a959-50203e1e9b11": {
+          "type": "item",
+          "settings": {
+            "meet": "Meet Katherine",
+            "arrow": "shopify:\/\/shop_images\/yellow_arrow.svg",
+            "name": "Katherine Ryzhaya",
+            "photo": "shopify:\/\/shop_images\/katherine.png",
+            "post": "Founder and CEO",
+            "story": "A serial entrepreneur and industry expert, Katherine has nearly 20 years of experience in running infrastructure businesses and closing complex energy transactions. As the sole founder of Marvel, in 2019, Katherine saw an opportunity to run a business <i>her<\/i> way — leading with high integrity, unmatched focus on service quality and utmost commitment to driving customers’ yields.",
+            "career_history": "<ul class=\"list\">\n\t\t\t\t\t\t\t<li class=\"item-list\">CEO, Renovar, <b>Shell Digital Ventures<\/b>\n<\/li>\n\t\t\t\t\t\t\t<li class=\"item-list\">CCO, <b>Lightsource bp<\/b>\n<\/li>\n\t\t\t\t\t\t\t<li class=\"item-list\">Co-Founder and CCO, <b>AMS<\/b> (acquired by Fluence, NASDAQ: FLNC)<\/li>\n\t\t\t\t\t\t\t<li class=\"item-list\">VP and Director, <b>Evolution Markets<\/b>\n<\/li>\n\n<li class=\"item-list\">Principal, <b>Pacific Gas and Electric Company<\/b>\n<\/li>\n\t\t\t\t\t\t<\/ul>",
+            "education": "<ul class=\"list\">\n\t\t\t\t\t\t\t<li class=\"item-list\">BS, Finance, University of San Francisco<\/li>\n\t\t\t\t\t\t\t<li class=\"item-list\">MBA, Finance, Duke University<\/li>\n\t\t\t\t\t\t<\/ul>",
+            "socials_1": "shopify:\/\/shop_images\/linkedin.svg",
+            "socials_2": "shopify:\/\/shop_images\/email.svg"
+          }
+        },
+        "04c656f0-bce4-42ce-bf57-5f3f3a8af7a5": {
+          "type": "item",
+          "settings": {
+            "meet": "Meet Sam",
+            "arrow": "shopify:\/\/shop_images\/yellow_arrow.svg",
+            "name": "Sam Peelle",
+            "photo": "shopify:\/\/shop_images\/sam.png",
+            "post": "Senior Director and Partner",
+            "story": "Sam has over 10 years of experience in renewable power and gas markets, with expertise in renewable fuels, demand side management, energy procurement, energy storage and analytics. Throughout his career, Sam has worked on all sides of the transaction, in each case leading with integrity, customer service and a keen focus on delivering results that positively impact the client’s bottom line and environmental impact.",
+            "career_history": "<ul class=\"list\">\n\t\n<li class=\"item-list\">Director, <b>AMS<\/b> (acquired by Fluence, NASDAQ: FLNC)<\/li>\n\t\t\t\t\t\t<li class=\"item-list\">Manager, <b>EnerNOC<\/b> (acquired by Enel, BIT: ENEL)<\/li>\n\t\t\t\t\t\t\t<li class=\"item-list\">Regional Manager, <b>United Technologies Corporation<\/b>\n<\/li>\t\t\n\t\t\t\t\t\t\t\t\t\t<\/ul>",
+            "education": "<ul class=\"list\">\n\t\t\t\t\t\t\t<li class=\"item-list\">BA, Political Science, University of Pennsylvania<\/li>\n\t\t\t\t\t\t\t<li class=\"item-list\">MBA, Finance, Babson College<\/li>\n\t\t\t\t\t\t<\/ul>",
+            "socials_1": "shopify:\/\/shop_images\/linkedin.svg",
+            "socials_2": "shopify:\/\/shop_images\/email.svg"
+          }
+        }
+      },
+      "block_order": [
+        "f154552a-e8db-4f6e-a959-50203e1e9b11",
+        "04c656f0-bce4-42ce-bf57-5f3f3a8af7a5"
+      ],
+      "settings": {
+        "section_title": "Team"
+      }
     }
   },
   "order": [
     "hero",
     "mission",
-    "services"
+    "services",
+    "team"
   ]
 }
