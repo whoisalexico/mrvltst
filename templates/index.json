@@ -2,15 +2,76 @@
   "sections": {
     "hero": {
       "type": "hero",
-      "settings": {}
+      "settings": {
+        "hero_text": "Marvel Power Group",
+        "hero_support_text": "Marvel Power Group is a woman-owned, ESG-focused transaction broker and commercial advisor. We offer services to clients in power, gas, water, industrial and transportation sectors.",
+        "hero_button_text": "CONTACT US",
+        "hero_more_text": "Scroll for more"
+      }
     },
     "mission": {
-       "type": "mission",
-       "settings": {}
+      "type": "mission",
+      "blocks": {
+        "178512e4-c859-47c1-8d3c-5a664775f01f": {
+          "type": "item",
+          "settings": {
+            "item_text": "in closed RNG transactions in 2021 alone",
+            "item_image": "shopify:\/\/shop_images\/mission-item-1_17e087c1-1748-4f8a-b808-36e8183d1bb8.svg",
+            "item_num": "$1B"
+          }
+        },
+        "16f032d5-d5b8-4e5d-9ce7-52b651ac0bbe": {
+          "type": "item",
+          "settings": {
+            "item_text": "in cumulative Renewable Energy and RNG closings",
+            "item_image": "shopify:\/\/shop_images\/mission-item-2_e6dbdf02-c4dd-4b09-a123-2d66175ae739.svg",
+            "item_num": "$4B"
+          }
+        },
+        "3d459ca1-e294-41ce-b5a1-e0309cc40b64": {
+          "type": "item",
+          "settings": {
+            "item_text": "of collective industry experience",
+            "item_image": "shopify:\/\/shop_images\/mission-item-3_c8c4d9df-b4e9-43ed-a971-f871d129b92b.svg",
+            "item_num": "30 Yrs"
+          }
+        },
+        "5d66701b-be29-4e66-9a96-a5220645aba7": {
+          "type": "item",
+          "settings": {
+            "item_text": "in capital placed for client ventures",
+            "item_image": "shopify:\/\/shop_images\/mission-item-4_a5696011-5eff-481d-b28f-d98cd9dc5226.svg",
+            "item_num": "$300M"
+          }
+        },
+        "4b1af441-076c-4fb5-bcc6-ddb9c3522759": {
+          "type": "item",
+          "settings": {
+            "item_text": "independent and unbiased advice",
+            "item_image": "shopify:\/\/shop_images\/mission-item-5_c0227980-64bf-4a4c-a5e7-37b25c70894a.svg",
+            "item_num": "100%"
+          }
+        }
+      },
+      "block_order": [
+        "178512e4-c859-47c1-8d3c-5a664775f01f",
+        "16f032d5-d5b8-4e5d-9ce7-52b651ac0bbe",
+        "3d459ca1-e294-41ce-b5a1-e0309cc40b64",
+        "5d66701b-be29-4e66-9a96-a5220645aba7",
+        "4b1af441-076c-4fb5-bcc6-ddb9c3522759"
+      ],
+      "settings": {
+        "section_title": "Mission",
+        "mission_rich_text": ""
+      }
     },
-    "services":{
+    "services": {
       "type": "services",
-      "settings": {}
+      "settings": {
+        "section_title": "Services",
+        "services_rich_text_main": "",
+        "services_rich_text_support": ""
+      }
     }
   },
   "order": [
