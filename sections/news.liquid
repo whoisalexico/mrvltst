@@ -1,0 +1,72 @@
+{{ "news.scss" | asset_url | stylesheet_tag }}
+
+<section class="news">
+	<h2 class="section-title">{{ section.settings.section_title }}</h2>
+	<div class="bar yellow"></div>
+	<div class="news-cards">
+		{% for block in section.blocks %}
+			{% case block.type %}
+				{% when 'news' %}
+					<div class="card">
+						{{ block.settings.image |  image_url: width: 350 | image_tag: class: 'image' }}
+						<div class="content">
+							{{ block.settings.logo | image_url: height: 32 | image_tag: class: 'logo' }}
+							<p class="heading">{{ block.settings.news_header }}</p>
+							<div class="news-date">
+								<p class="date">{{ block.settings.date }}</p>
+								{{ block.settings.arrow | image_url: width: 43 | image_tag }}
+							</div>
+						</div>
+					</div>
+			{% endcase %}
+		{% endfor %}
+	</div>
+</section>
+
+{% schema %}
+{
+	"name": "Team",
+	"max_blocks": 3,
+	"settings": [
+		{
+			"id": "section_title",
+			"type": "text",
+			"label": "Section Title",
+			"default": "News"
+		}
+	],
+	"blocks": [
+		{
+			"type": "news",
+			"name": "News Card",
+			"settings": [
+				{
+					"id": "image",
+					"type": "image_picker",
+					"label": "Image"
+				},
+				{
+					"id": "logo",
+					"type": "image_picker",
+					"label": "Logo"
+				},
+				{
+					"id": "news_header",
+					"type": "text",
+					"label": "News Header"
+				},
+				{
+					"id": "arrow",
+					"type": "image_picker",
+					"label": "Arrow"
+				},
+				{
+					"id": "date",
+					"type": "text",
+					"label": "Post Date"
+				}
+			]
+		}
+	]
+}
+{% endschema %}

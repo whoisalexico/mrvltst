@@ -145,12 +145,56 @@
       "settings": {
         "section_title": "Team"
       }
+    },
+    "news": {
+      "type": "news",
+      "blocks": {
+        "3f212e42-c303-43e7-b53e-e852b9544f00": {
+          "type": "news",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/news-1.png",
+            "logo": "shopify:\/\/shop_images\/news-logo-1.svg",
+            "news_header": "Marvel Celebrates Anniversary, $1B in Closed Transactions",
+            "arrow": "shopify:\/\/shop_images\/yellow_arrow.svg",
+            "date": "July 13, 2021"
+          }
+        },
+        "95326f55-f88c-45d6-a035-5eba5b3437e2": {
+          "type": "news",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/news-2.png",
+            "logo": "shopify:\/\/shop_images\/news-logo-2.svg",
+            "news_header": "TRC and Marvel Announce RNG Development Support Partnership",
+            "arrow": "shopify:\/\/shop_images\/yellow_arrow.svg",
+            "date": "May 20, 2021"
+          }
+        },
+        "c0ea6fb3-0b7d-4621-b4c7-f8cef7b17324": {
+          "type": "news",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/news-3.png",
+            "logo": "shopify:\/\/shop_images\/news-logo-1.svg",
+            "news_header": "Marvel Power Group joins RNG Coalition",
+            "arrow": "shopify:\/\/shop_images\/yellow_arrow.svg",
+            "date": "Febuary 03, 2020"
+          }
+        }
+      },
+      "block_order": [
+        "3f212e42-c303-43e7-b53e-e852b9544f00",
+        "95326f55-f88c-45d6-a035-5eba5b3437e2",
+        "c0ea6fb3-0b7d-4621-b4c7-f8cef7b17324"
+      ],
+      "settings": {
+        "section_title": "News"
+      }
     }
   },
   "order": [
     "hero",
     "mission",
     "services",
-    "team"
+    "team",
+    "news"
   ]
 }
