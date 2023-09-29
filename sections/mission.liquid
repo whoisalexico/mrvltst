@@ -1,39 +1,41 @@
 {{ "mission.scss" | asset_url | stylesheet_tag }}
 
 <section class="mission">
-	<h2 class="section-title">{{ section.settings.section_title }}</h2>
-	<div class="bar yellow"></div>
-	<div class="mission-wrapper">
-		{% if sectiom.settings.image %}
-			{{ section.settings.image | image_url: width: 486 | image_tag }}
-		{% else %}
-			<img src="{{ "mission.png" | asset_url}}" alt="">
-		{% endif %}
-		{% if section.settings.mission_rich_text == blank %}
-			<p class="mission-text"><b>Energy Transition is our core and only focus.</b> We structure complex, meaningfully large renewable natural gas (RNG) and power transactions for companies committed to environmentally-sound, commercially-ready solutions.<br/><br/>Our principals are experienced practitioners who have run companies, originated and closed complex deals, advocated and negotiated favorable policy and advanced technological innovation. With over three decades of combined experience in renewables specifically, our customers chose us, every time, for our unparalleled industry knowledge, market acumen, professionalism and commitment to their prosperity.</p>
-		{% else %}
-			<p class="mission-text">{{ section.settings.mission_rich_text }}</p>
-		{% endif %}
-	</div>
-	<div class="mission-items">
-		{% for block in section.blocks %}
-			{% if block == blank %}
-				<div class="item">
-					<img src="{{ "mission-item-1.svg" | asset_url: width: 72 }}" alt="">
-					<p class="item-number">$1B</p>
-					<p class="item-text">in closed RNG transactions in 2021 alone</p>
-				</div>
+	<div class="container">
+		<h2 class="section-title">{{ section.settings.section_title }}</h2>
+		<div class="bar yellow"></div>
+		<div class="mission-wrapper">
+			{% if sectiom.settings.image %}
+				{{ section.settings.image | image_url: width: 486 | image_tag }}
 			{% else %}
-				{% case block.type %}
-					{% when 'item' %}
-						<div class="item">
-							{{ block.settings.item_image | image_url: width: 72 | image_tag }}
-							<p class="item-number">{{ block.settings.item_num }}</p>
-							<p class="item-text">{{ block.settings.item_text }}</p>
-						</div>
-				{% endcase %}
+				<img src="{{ "mission.png" | asset_url}}" alt="">
 			{% endif %}
-		{% endfor %}
+			{% if section.settings.mission_rich_text == blank %}
+				<p class="mission-text"><b>Energy Transition is our core and only focus.</b> We structure complex, meaningfully large renewable natural gas (RNG) and power transactions for companies committed to environmentally-sound, commercially-ready solutions.<br/><br/>Our principals are experienced practitioners who have run companies, originated and closed complex deals, advocated and negotiated favorable policy and advanced technological innovation. With over three decades of combined experience in renewables specifically, our customers chose us, every time, for our unparalleled industry knowledge, market acumen, professionalism and commitment to their prosperity.</p>
+			{% else %}
+				<p class="mission-text">{{ section.settings.mission_rich_text }}</p>
+			{% endif %}
+		</div>
+		<div class="mission-items">
+			{% for block in section.blocks %}
+				{% if block == blank %}
+					<div class="item">
+						<img src="{{ "mission-item-1.svg" | asset_url: width: 72 }}" alt="">
+						<p class="item-number">$1B</p>
+						<p class="item-text">in closed RNG transactions in 2021 alone</p>
+					</div>
+				{% else %}
+					{% case block.type %}
+						{% when 'item' %}
+							<div class="item">
+								{{ block.settings.item_image | image_url: width: 72 | image_tag }}
+								<p class="item-number">{{ block.settings.item_num }}</p>
+								<p class="item-text">{{ block.settings.item_text }}</p>
+							</div>
+					{% endcase %}
+				{% endif %}
+			{% endfor %}
+		</div>
 	</div>
 </section>
 

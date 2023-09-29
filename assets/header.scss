@@ -1,46 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 .header {
-    padding: 30px 265px;
-    position: absolute;
-    background-color: transparent;
-    width: 100%;
+  position: absolute;
+  background-color: transparent;
+  width: 100%;
+  transition: .5s;
+  z-index: 99;
+
+  .container {
     display: flex;
     justify-content: space-between;
-    transition: .5s;
-    z-index: 99;
-    .logo{
-        margin-right: 390px;
-    }
-    &.sticky{
-        background-color: #fff;
-        position: fixed;
-        top: 0;
-        transition: .5s;
+    padding: 30px 0;
+
+    &.sticky {
+      background-color: #fff;
+      position: fixed;
+      top: 0;
+      transition: .5s;
     }
 
     .nav_links {
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-        font-size: 18px;
-        font-family: 'Poppins', sans-serif;
-        line-height: 24.5px;
-        padding: 0;
-        .link {
-            text-decoration: none;
-            padding: 0 35px;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      font-size: 18px;
+      font-family: 'Poppins', sans-serif;
+      line-height: 24.5px;
+      padding: 0;
 
-            &:first-of-type{
-                padding: 0 35px 0 0;
-            }
+      .link {
+        text-decoration: none;
+        padding: 0 35px;
 
-            &:last-of-type{
-                padding: 0 0 0 35px;
-            }
-
-            &:hover {
-                color: #f9d023
-            }
+        &:first-of-type {
+          padding: 0 35px 0 0;
         }
+
+        &:last-of-type {
+          padding: 0 0 0 35px;
+        }
+
+        &:hover {
+          color: #f9d023
+        }
+      }
     }
+  }
 }

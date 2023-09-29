@@ -1,30 +1,32 @@
 {{ "services.scss" | asset_url | stylesheet_tag }}
 
 <section class="services yellow">
-	<h2 class="section-title">{{ section.settings.section_title }}</h2>
-	<div class="bar white"></div>
-	{% if section.settings.services_rich_text_main == blank %}
-		<p class="services-main-text">Our clients are at the forefront of energy transition and innovation. Their mandate is complex: balance project needs with customer demands, lofty investment targets and development complexities. Layer on market volatility and regulatory risk and the scope becomes less manageable in-house. This is where Marvel comes in. We understand the task and bring deep expertise to addressing these challenges.</p>
-	{% else %}
-		<p class="services-main-text">{{ section.settings.services_rich_text_main }}</p>
-	{% endif %}
-	<div class="services-items">
-		{% for block in section.blocks %}
-			{% case block.type %}
-				{% when 'item' %}
-					<div class="item">
-						<p class="title">{{ block.settings.item_title }}</p>
-						{{ block.settings.list }}
-						{{ block.settings.arrow | image_url: width: 43 | image_tag }}
-					</div>
-			{% endcase %}
-		{% endfor %}
+	<div class="container">
+		<h2 class="section-title">{{ section.settings.section_title }}</h2>
+		<div class="bar white"></div>
+		{% if section.settings.services_rich_text_main == blank %}
+			<p class="services-main-text">Our clients are at the forefront of energy transition and innovation. Their mandate is complex: balance project needs with customer demands, lofty investment targets and development complexities. Layer on market volatility and regulatory risk and the scope becomes less manageable in-house. This is where Marvel comes in. We understand the task and bring deep expertise to addressing these challenges.</p>
+		{% else %}
+			<p class="services-main-text">{{ section.settings.services_rich_text_main }}</p>
+		{% endif %}
+		<div class="services-items">
+			{% for block in section.blocks %}
+				{% case block.type %}
+					{% when 'item' %}
+						<div class="item">
+							<p class="title">{{ block.settings.item_title }}</p>
+							{{ block.settings.list }}
+							{{ block.settings.arrow | image_url: width: 43 | image_tag }}
+						</div>
+				{% endcase %}
+			{% endfor %}
+		</div>
+		{% if section.settings.services_rich_text_support == blank %}
+			<p class="services-support-text">Our clients are time constrained and under-resourced. Agendas shift, budgets move and priorities change. We understand. We are agile, creative and immediately responsive to your various working styles, governance requirements and evolving needs.</p>
+		{% else %}
+			<p class="services-support-text">{{ section.settings.services_rich_text_support }}</p>
+		{% endif %}
 	</div>
-	{% if section.settings.services_rich_text_support == blank %}
-		<p class="services-support-text">Our clients are time constrained and under-resourced. Agendas shift, budgets move and priorities change. We understand. We are agile, creative and immediately responsive to your various working styles, governance requirements and evolving needs.</p>
-	{% else %}
-		<p class="services-support-text">{{ section.settings.services_rich_text_support }}</p>
-	{% endif %}
 </section>
 
 {% schema %}

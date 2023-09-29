@@ -1,0 +1,41 @@
+{{ "contact.scss" | asset_url | stylesheet_tag }}
+
+<section class="contacts">
+	<div class="container">
+		<h2 class="section-title">{{ section.settings.section_title }}</h2>
+		<div class="bar yellow"></div>
+		<div class="contact-us">
+			<div class="email-block">
+				<p class="email-heading">Email us here:</p>
+				<p class="email">{{ section.settings.email }}</p>
+			</div>
+			<form action="" class="contact-form">
+				<p class="form-heading">Stay in the loop by getting on our mailing list</p>
+				<input type="text" placeholder="NAME *" required>
+				<input type="email" placeholder="E-MAIL *" required>
+				<input type="text" placeholder="COMPANY *" required>
+				<button class="button yellow">SEND <img src="{{ "plug.svg" | asset_url }}" class="plug"></button>
+			</form>
+		</div>
+	</div>
+</section>
+
+{% schema %}
+{
+	"name": "Contact",
+	"settings": [
+		{
+			"id": "section_title",
+			"type": "text",
+			"label": "Section Title",
+			"default": "Contact"
+		},
+		{
+			"id": "email",
+			"type": "text",
+			"label": "Contact Email",
+			"default": "info@marvelpowergroup.com"
+		}
+	]
+}
+{% endschema %}

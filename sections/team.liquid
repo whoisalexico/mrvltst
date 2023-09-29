@@ -1,36 +1,38 @@
 {{ "team.scss" | asset_url | stylesheet_tag }}
 
 <section class="team">
-	<h2 class="section-title">{{ section.settings.section_title }}</h2>
-	<div class="bar yellow"></div>
-	<div class="team-cards">
-		{% for block in section.blocks %}
-			{% case block.type %}
-				{% when 'item' %}
-					<div class="card">
-						{{ block.settings.photo |  image_url: width: 228 | image_tag: class: 'photo' }}
-						<div class="meet">
-							<p class="text">{{ block.settings.meet }}</p>
-							{{ block.settings.arrow | image_url: width: 43 | image_tag }}
+	<div class="container">
+		<h2 class="section-title">{{ section.settings.section_title }}</h2>
+		<div class="bar yellow"></div>
+		<div class="team-cards">
+			{% for block in section.blocks %}
+				{% case block.type %}
+					{% when 'item' %}
+						<div class="card">
+							{{ block.settings.photo |  image_url: width: 228 | image_tag: class: 'photo' }}
+							<div class="meet">
+								<p class="text">{{ block.settings.meet }}</p>
+								{{ block.settings.arrow | image_url: width: 43 | image_tag }}
+							</div>
+							<p class="name">{{ block.settings.name }}</p>
+							<p class="post">{{ block.settings.post }}</p>
+							<p class="story">{{ block.settings.story }}</p>
+							<div class="career-history">
+								<p class="list-title">Career History</p>
+								{{ block.settings.career_history }}
+							</div>
+							<div class="education">
+								<p class="list-title">Education</p>
+								{{ block.settings.education }}
+							</div>
+							<div class="socials">
+								<a href="#">{{ block.settings.socials_1 | image_url: width: 32 | image_tag}}</a>
+								<a href="#">{{ block.settings.socials_2 | image_url: width: 32 | image_tag}}</a>
+							</div>
 						</div>
-						<p class="name">{{ block.settings.name }}</p>
-						<p class="post">{{ block.settings.post }}</p>
-						<p class="story">{{ block.settings.story }}</p>
-						<div class="career-history">
-							<p class="list-title">Career History</p>
-							{{ block.settings.career_history }}
-						</div>
-						<div class="education">
-							<p class="list-title">Education</p>
-							{{ block.settings.education }}
-						</div>
-						<div class="socials">
-							<a href="#">{{ block.settings.socials_1 | image_url: width: 32 | image_tag}}</a>
-							<a href="#">{{ block.settings.socials_2 | image_url: width: 32 | image_tag}}</a>
-						</div>
-					</div>
-			{% endcase %}
-		{% endfor %}
+				{% endcase %}
+			{% endfor %}
+		</div>
 	</div>
 </section>
 

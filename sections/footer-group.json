@@ -1,0 +1,14 @@
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "contact": {
+      "type": "contact",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "contact"
+  ]
+}

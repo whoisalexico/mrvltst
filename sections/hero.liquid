@@ -1,14 +1,16 @@
 {{ "hero.scss" | asset_url | stylesheet_tag }}
 
 <section class="hero">
-	<h1 class="hero-text">{{ section.settings.hero_text }}</h1>
-	<p class="hero-support-text">{{ section.settings.hero_support_text }}</p>
-	<a class="button yellow"  href="#">
-		{{ section.settings.hero_button_text }}
-		<img class="plug" src="{{ "plug.svg" | asset_url }}" alt="">
-	</a>
-	<div class="line yellow"></div>
-	<p class="hero-more-text">{{ section.settings.hero_more_text }}</p>
+	<div class="container">
+		<h1 class="hero-text">{{ section.settings.hero_text }}</h1>
+		<p class="hero-support-text">{{ section.settings.hero_support_text }}</p>
+		<a class="button yellow"  href="#">
+			{{ section.settings.hero_button_text }}
+			<img class="plug" src="{{ "plug.svg" | asset_url }}" alt="">
+		</a>
+		<div class="line yellow"></div>
+		<p class="hero-more-text">{{ section.settings.hero_more_text }}</p>
+	</div>
 </section>
 
 {% schema %}

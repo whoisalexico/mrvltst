@@ -1,25 +1,27 @@
 {{ "news.scss" | asset_url | stylesheet_tag }}
 
 <section class="news">
-	<h2 class="section-title">{{ section.settings.section_title }}</h2>
-	<div class="bar yellow"></div>
-	<div class="news-cards">
-		{% for block in section.blocks %}
-			{% case block.type %}
-				{% when 'news' %}
-					<div class="card">
-						{{ block.settings.image |  image_url: width: 350 | image_tag: class: 'image' }}
-						<div class="content">
-							{{ block.settings.logo | image_url: height: 32 | image_tag: class: 'logo' }}
-							<p class="heading">{{ block.settings.news_header }}</p>
-							<div class="news-date">
-								<p class="date">{{ block.settings.date }}</p>
-								{{ block.settings.arrow | image_url: width: 43 | image_tag }}
+	<div class="container">
+		<h2 class="section-title">{{ section.settings.section_title }}</h2>
+		<div class="bar yellow"></div>
+		<div class="news-cards">
+			{% for block in section.blocks %}
+				{% case block.type %}
+					{% when 'news' %}
+						<div class="card">
+							{{ block.settings.image |  image_url: width: 350 | image_tag: class: 'image' }}
+							<div class="content">
+								{{ block.settings.logo | image_url: height: 32 | image_tag: class: 'logo' }}
+								<p class="heading">{{ block.settings.news_header }}</p>
+								<div class="news-date">
+									<p class="date">{{ block.settings.date }}</p>
+									{{ block.settings.arrow | image_url: width: 43 | image_tag }}
+								</div>
 							</div>
 						</div>
-					</div>
-			{% endcase %}
-		{% endfor %}
+				{% endcase %}
+			{% endfor %}
+		</div>
 	</div>
 </section>
 

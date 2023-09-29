@@ -6,8 +6,30 @@
   background-color: #ffffff;
 }
 
+input{
+  width: 445px;
+  height: 48px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  padding: 20px 14px;
+  font-weight: 700;
+  color: #0B0D21;
+  border: none;
+  &::placeholder{
+    font-weight: 700;
+    color: #0B0D21;
+  }
+}
+
+.container{
+  padding: 96px 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1140px;
+}
+
 section{
-  padding: 96px 265px;
+
 }
 
 .bar{
