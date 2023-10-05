@@ -1,24 +1,42 @@
 .team-cards{
   display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+  }
 
   .card{
-    width: 540px;
     height: 892px;
     box-shadow: 0px 0px 40px 0px rgba(0, 13, 129, 0.08);
     border-radius: 0 0 0 64px;
-    margin-right: 30px;
     position: relative;
     padding: 0 64px 56px;
+    max-width: 540px;
+
+    @media screen and (max-width: 500px) {
+      padding: 0 24px 80px;
+      //height: auto;
+    }
 
     .photo{
       position: absolute;
       left: calc(100% - 228px);
+
+      @media screen and (max-width: 500px) {
+        width: 136px;
+        height: 136px;
+        left: calc(100% - 136px);
+      }
     }
 
     .meet{
       display: flex;
       align-items: center;
       margin-top: 32px;
+      @media screen and (max-width: 500px) {
+        margin-top: 16px;
+      }
 
       .text{
         color: #F9D023;
@@ -26,6 +44,11 @@
         font-weight: 700;
         line-height: 18px;
         margin: 0 24px 0 0;
+
+        @media screen and (max-width: 500px) {
+          font-size: 12px;
+          line-height: 16px;
+        }
       }
     }
 
@@ -35,6 +58,12 @@
       font-size: 40px;
       font-weight: 700;
       line-height: 48px;
+
+      @media screen and (max-width: 500px) {
+        font-size: 22px;
+        line-height: 28px;
+        margin: 24px 0 8px;
+      }
     }
 
     .post{
@@ -42,6 +71,14 @@
       line-height: 18px;
       font-weight: 400;
       margin-bottom: 40px;
+
+      @media screen and (max-width: 500px) {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        margin-bottom: 32px;
+        width: 116px;
+      }
     }
 
     .story{
@@ -49,6 +86,12 @@
       line-height: 26px;
       font-weight: 400;
       margin-bottom: 40px;
+
+      @media screen and (max-width: 500px) {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 32px;
+      }
     }
 
     .list-title{
@@ -56,11 +99,20 @@
       font-weight: 700;
       line-height: 32px;
       margin-bottom: 16px;
+
+      @media screen and (max-width: 500px) {
+        font-size: 18px;
+        line-height: 24px;
+        margin-top: 0;
+      }
     }
 
     .education{
       position: absolute;
       bottom: 64px;
+      @media screen and (max-width: 500px) {
+        bottom: 80px;
+      }
     }
 
     .socials{
@@ -68,6 +120,10 @@
       height: 32px;
       bottom: 40px;
       right: 40px;
+      @media screen and (max-width: 500px) {
+        bottom: 24px;
+        right: 24px;
+      }
     }
 
     .list{
@@ -95,52 +151,4 @@
     }
   }
 
-}
-.services-support-text {
-  width: 825px;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 26px;
-  margin: 0;
-}
-
-.services-items {
-  margin: 56px 0;
-  display: flex;
-
-  .item{
-    margin-right: 30px;
-
-    .title{
-      font-size: 40px;
-      font-weight: 700;
-      line-height: 48px;
-      width: 350px;
-    }
-
-    .list{
-      list-style: square;
-      margin:0 0 0 -22px;
-
-      .item-list{
-        font-size: 18px;
-        line-height: 26px;
-        margin-bottom: 15px;
-
-        &::marker{
-          font-size: 14px;
-          color: #ffffff;
-        }
-
-        &:last-child{
-          margin-bottom: 32px;
-        }
-      }
-    }
-
-
-    &:last-child{
-      margin-right: 0;
-    }
-  }
 }

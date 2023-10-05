@@ -48,9 +48,9 @@
         grid-template-columns: 100%;
         min-height: 100%;
         margin: 0;
-        font-size: 1.5rem;
-        letter-spacing: 0.06rem;
-        line-height: calc(1 + 0.8 / var(--font-body-scale));
+        {% comment %}font-size: 1.5rem;{% endcomment %}
+        {% comment %}letter-spacing: 0.06rem;{% endcomment %}
+        {% comment %}line-height: calc(1 + 0.8 / var(--font-body-scale));{% endcomment %}
         font-family: "Sofia Pro";
         font-style: var(--font-body-style);
         font-weight: var(--font-body-weight);
@@ -58,7 +58,7 @@
 
       @media screen and (min-width: 750px) {
         body {
-          font-size: 1.6rem;
+          {% comment %}font-size: 1.6rem;{% endcomment %}
         }
       }
     {% endstyle %}
@@ -152,5 +152,6 @@
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
       <script src="{{ "scroll.js" | asset_url }}" defer="defer"></script>
+     <script src="{{ "navbar.js" | asset_url }}" defer></script>
   </body>
 </html>

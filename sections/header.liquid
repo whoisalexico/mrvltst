@@ -2,33 +2,31 @@
 
 
 <header class="header">
-  <div class="container">
-    <img class="logo" src="{{ 'logo.svg' | asset_url }}"/>
-    <ul class="nav_links">
-      {% for link in linklists.main-menu.links %}
-        <li class="link {{ link.title }}">{{ link.title }}</li>
-      {% endfor %}
-    </ul>
-  </div>
+	<div class="container">
+		<nav class="navbar">
+			<img class="logo" src="{{ 'logo.svg' | asset_url }}"/>
+			<ul class="nav_links">
+				{% for link in linklists.main-menu.links %}
+					<li class="link {{ link.title }}">{{ link.title }}</li>
+				{% endfor %}
+			</ul>
+		</nav>
+		<nav class="navbar-mobile">
+			<div class="mobile-header">
+				<img class="logo" src="{{ 'logo.svg' | asset_url }}"/>
+				<div class="menu-button"></div>
+			</div>
+			<ul class="mobile_nav_links">
+				{% for link in linklists.main-menu.links %}
+					<li class="mobile_link {{ link.title }}">{{ link.title }}</li>
+				{% endfor %}
+			</ul>
+		</nav>
+
+	</div>
 </header>
 <script>
-  window.onscroll = () =>{
-    StickyNav();
-  }
-  let header = document.querySelector(".header");
-  let sticky = header.offsetTop;
 
-  function StickyNav(){
-    if(window.pageYOffset > sticky)
-      header.classList.add("sticky")
-    else
-      header.classList.remove("sticky")
-  }
-
-  let logo = document.querySelector(".logo");
-  logo.onclick = () =>{
-    window.scrollTo({top: 0, behavior: "smooth"})
-  }
 
 </script>
 
@@ -41,23 +39,24 @@
       "logo": {{ settings.logo | image_url: width: 500 | prepend: "https:" | json }},
     {% endif %}
     "sameAs": [
-      {{ settings.social_twitter_link | json }},
-      {{ settings.social_facebook_link | json }},
-      {{ settings.social_pinterest_link | json }},
-      {{ settings.social_instagram_link | json }},
-      {{ settings.social_tiktok_link | json }},
-      {{ settings.social_tumblr_link | json }},
-      {{ settings.social_snapchat_link | json }},
-      {{ settings.social_youtube_link | json }},
+      {{ settings.social_twitter_link | json }}
+      {{ settings.social_facebook_link | json }}
+      {{ settings.social_pinterest_link | json }}
+      {{ settings.social_instagram_link | json }}
+      {{ settings.social_tiktok_link | json }}
+      {{ settings.social_tumblr_link | json }}
+      {{ settings.social_snapchat_link | json }}
+      {{ settings.social_youtube_link | json }}
       {{ settings.social_vimeo_link | json }}
     ],
     "url": {{ request.origin | append: page.url | json }}
   }
+
 </script>
 
 {%- if request.page_type == 'index' -%}
-  {% assign potential_action_target = request.origin | append: routes.search_url | append: "?q={search_term_string}" %}
-  <script type="application/ld+json">
+	{% assign potential_action_target = request.origin | append: routes.search_url | append: "?q={search_term_string}" %}
+	<script type="application/ld+json">
     {
       "@context": "http://schema.org",
       "@type": "WebSite",
@@ -69,6 +68,7 @@
       },
       "url": {{ request.origin | append: page.url | json }}
     }
-  </script>
+
+	</script>
 {%- endif -%}
 
