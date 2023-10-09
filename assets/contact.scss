@@ -10,8 +10,16 @@
   .contact-us{
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 568px) {
+      flex-direction: column;
+    }
+
     .email-block{
       font-size: 40px;
+      @media screen and (max-width: 568px) {
+        font-size: 22px;
+        margin-bottom: 56px;
+      }
       .email-heading{
         margin: 0;
       }
@@ -29,10 +37,14 @@
 
       .form-heading{
         font-size: 40px;
-        max-width: 442px;
-        width: 300px;
+        width: 290px;
         margin: 0 0 40px;
         line-height: 48px;
+        @media screen and (max-width: 568px) {
+          font-size: 22px;
+          line-height: 28px;
+          margin-bottom: 32px;
+        }
       }
 
       .button{
@@ -43,6 +55,9 @@
         font-weight: 600;
         letter-spacing: .6px;
         align-self: end;
+        @media screen and (max-width: 568px) {
+          width: 196px;
+        }
       }
     }
   }
