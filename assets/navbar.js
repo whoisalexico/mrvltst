@@ -86,7 +86,7 @@ if (window.innerWidth <= 768) {
             quitMobileMenu();
 
             const target = document.querySelector(navLinks[i].hash);
-            const offset = target.offsetTop - 70;
+            const offset = target.offsetTop - 100;
 
             window.scrollBy({
                 top: offset,
