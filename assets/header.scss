@@ -163,7 +163,7 @@
     }
 
     #menu-button {
-      left: 87.5%;
+      left: calc(100% - 41px);
       display: none;
       position: absolute;
 
@@ -251,6 +251,8 @@
 
           @media screen and (max-width: 768px) {
             padding: 0 0 24px;
+            font-size: 40px;
+            line-height: 48px;
           }
         }
       }
