@@ -274,6 +274,11 @@
         border: none;
         transition: .5s;
 
+        @media screen and (max-width: 768px) {
+          margin-top: 64px;
+          display: block;
+        }
+
         .plug {
           width: 20px;
           height: 10px;

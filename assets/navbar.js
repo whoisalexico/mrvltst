@@ -83,11 +83,14 @@ function quitMobileMenu() {
 if (window.innerWidth <= 768) {
     for (let i = 0; i < navLinks.length; i++) {
         navLinks[i].addEventListener('click', function () {
-            quitMobileMenu()
+            quitMobileMenu();
 
-            $('html, body').animate({
-                scrollTop: $(this.hash).offset().top - 70
-            }, 1, function () {
+            const target = document.querySelector(navLinks[i].hash);
+            const offset = target.offsetTop - 70;
+
+            window.scrollBy({
+                top: offset,
+                behavior: "smooth"
             });
         })
     }
@@ -97,9 +100,13 @@ if (window.innerWidth <= 768) {
         links[i].addEventListener('click', function (e) {
             e.preventDefault();
 
-            $('html, body').animate({
-                scrollTop: $(this.hash).offset().top - 50
-            }, 0);
+            const target = document.querySelector(links[i].hash);
+            const offset = target.offsetTop - 50;
+
+            window.scrollBy({
+                top: offset,
+                behavior: "smooth"
+            });
         });
     }
     for (let i = 0; i < navLinks.length; i++) {
