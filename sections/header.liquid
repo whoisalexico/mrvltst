@@ -1,7 +1,7 @@
 {{ "header.scss" | asset_url | stylesheet_tag }}
 
 
-<header class="header">
+{% comment %}<header class="header">
 	<div class="container">
 		<nav class="navbar">
 			<img class="logo" src="{{ 'logo.svg' | asset_url }}"/>
@@ -23,6 +23,29 @@
 			</ul>
 		</nav>
 
+	</div>
+</header>{% endcomment %}
+<header id="header" class="header">
+	<div class="container head">
+		<a href="#hero" class="logo" id="header-hero">
+			<img class="logo-black" src="{{ 'logo.svg' | asset_url }}"/>
+			<img class="logo-white" src="{{ 'logo-white.svg' | asset_url }}"/>
+		</a>
+		<div id="menu-button"></div>
+		<nav class="navbar">
+			<div>
+				<ul class="navbar-navigate">
+					<li class="link"><a href="#mission" id="header-mission">Mission</a></li>
+					<li class="link"><a href="#services" id="header-services">Services</a></li>
+					<li class="link"><a href="#team" id="header-team">Team</a></li>
+					<li class="link"><a href="#news" id="header-news">News</a></li>
+					<li class="link"><a href="#footer" id="header-footer">Contact</a></li>
+				</ul>
+				<a class="contactus yellow">CONTACT US
+					<img class="plug" src="{{ "plug.svg" | asset_url }}" alt="">
+				</a>
+			</div>
+		</nav>
 	</div>
 </header>
 <script>
