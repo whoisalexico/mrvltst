@@ -98,6 +98,7 @@
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
     {% sections 'header-group' %}
     {{ content_for_layout }}
+    {% render 'navigation-lines' %}
 
 
 
@@ -153,6 +154,6 @@
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
       <script src="{{ "scroll.js" | asset_url }}" defer="defer"></script>
-     <script src="{{ "navbar.js" | asset_url }}" defer></script>
+      <script src="{{ "navbar.js" | asset_url }}" defer></script>
   </body>
 </html>

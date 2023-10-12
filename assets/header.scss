@@ -152,7 +152,7 @@
 
     .logo {
       width: 200px;
-      @media (max-width: 575px) {
+      @media (max-width: 576px) {
         transform: scale(0.7);
         width: 0;
       }
@@ -248,7 +248,10 @@
 
         .link {
           padding: 35px;
-
+          font-size: 18px;
+          .active{
+            border-bottom: 1px solid #F9D023;
+          }
           @media screen and (max-width: 768px) {
             padding: 0 0 24px;
             font-size: 40px;
