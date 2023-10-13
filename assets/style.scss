@@ -1,5 +1,10 @@
 @import "fonts.scss";
 
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 a{
   text-decoration: none;
   color: #0B0D21;
@@ -35,10 +40,26 @@ input{
   padding: 96px 15px;
   margin: 0 auto;
   width: 100%;
-  max-width: 1140px;
+
 
   @media screen and (max-width: 500px) {
     padding: 56px 15px;
+  }
+
+  @media screen and (min-width: 576px) {
+    max-width: 540px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 720px;
+  }
+
+  @media screen and (min-width: 992px) {
+    max-width: 960px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1140px;
   }
 }
 

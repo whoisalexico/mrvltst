@@ -2,8 +2,9 @@
   display: flex;
   justify-content: space-between;
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 991px) {
     flex-direction: column;
+    align-items: center;
   }
 
   .card{
@@ -14,16 +15,25 @@
     padding: 0 64px 56px;
     max-width: 540px;
 
-    @media screen and (max-width: 500px) {
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+      max-width: 450px;
+      height: auto;
+    }
+
+    @media screen and (max-width: 991px) {
       padding: 0 24px 80px;
-      //height: auto;
+      height: auto;
+
+      &:first-child{
+        margin-bottom: 32px;
+      }
     }
 
     .photo{
       position: absolute;
       left: calc(100% - 228px);
 
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 768px) {
         width: 136px;
         height: 136px;
         left: calc(100% - 136px);
@@ -34,7 +44,7 @@
       display: flex;
       align-items: center;
       margin-top: 32px;
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 768px) {
         margin-top: 16px;
       }
 
@@ -45,7 +55,7 @@
         line-height: 18px;
         margin: 0 24px 0 0;
 
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 768px) {
           font-size: 12px;
           line-height: 16px;
         }
@@ -59,10 +69,11 @@
       font-weight: 700;
       line-height: 48px;
 
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 768px) {
         font-size: 22px;
         line-height: 28px;
         margin: 24px 0 8px;
+        max-width: 120px;
       }
     }
 
@@ -72,7 +83,7 @@
       font-weight: 400;
       margin-bottom: 40px;
 
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 768px) {
         font-size: 12px;
         font-weight: 400;
         line-height: 16px;
@@ -87,10 +98,14 @@
       font-weight: 400;
       margin-bottom: 40px;
 
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 768px) {
         font-size: 14px;
         line-height: 24px;
         margin-bottom: 32px;
+      }
+      @media screen and (min-width: 992px) and (max-width: 1200px) {
+        max-width: 450px;
+        height: 286px;
       }
     }
 
@@ -100,7 +115,7 @@
       line-height: 32px;
       margin-bottom: 16px;
 
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 768px) {
         font-size: 18px;
         line-height: 24px;
         margin-top: 0;
@@ -110,8 +125,9 @@
     .education{
       position: absolute;
       bottom: 64px;
-      @media screen and (max-width: 500px) {
-        bottom: 80px;
+      @media screen and (max-width: 1200px) {
+        position: static;
+        margin-top: 20px;
       }
     }
 
@@ -120,7 +136,7 @@
       height: 32px;
       bottom: 40px;
       right: 40px;
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 768px) {
         bottom: 24px;
         right: 24px;
       }

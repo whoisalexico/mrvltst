@@ -10,13 +10,17 @@
   .contact-us{
     display: flex;
     justify-content: space-between;
-    @media screen and (max-width: 568px) {
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 991px) {
       flex-direction: column;
     }
 
     .email-block{
       font-size: 40px;
-      @media screen and (max-width: 568px) {
+      @media screen and (max-width: 768px) {
         font-size: 22px;
         margin-bottom: 56px;
       }
@@ -37,12 +41,17 @@
       max-width: 445px;
       width: 100%;
 
+      @media screen and (min-width: 769px) and (max-width: 991px) {
+        align-self: flex-end;
+        margin-top: 20px;
+      }
+
       .form-heading{
         font-size: 40px;
         width: 290px;
         margin: 0 0 40px;
         line-height: 48px;
-        @media screen and (max-width: 568px) {
+        @media screen and (max-width: 768px) {
           font-size: 22px;
           line-height: 28px;
           margin-bottom: 32px;
@@ -57,7 +66,7 @@
         font-weight: 600;
         letter-spacing: .6px;
         align-self: end;
-        @media screen and (max-width: 568px) {
+        @media screen and (max-width: 768px) {
           width: 196px;
         }
       }
